@@ -1,0 +1,14 @@
+.display{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+
+.display > div{
+    margin:15px;
+}
+
+.display h1,
+.display p{
+    margin:0px;
+}
