@@ -1,0 +1,110 @@
+[
+    {
+        "name":"Lord of the Drinks",
+        "cuisines":["Finger Food","Continental", "European","Italian"],
+        "average_cost_for_two":1500,
+        "user_rating":{
+            "aggregate_rating":4.9,
+            "votes":1326
+        },
+        "type":["Lounge","Casual Dining"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    },
+    {
+        "name":"Joey's Pizza",
+        "cuisines":["Pizza"],
+        "average_cost_for_two":800,
+        "user_rating":{
+            "aggregate_rating":4.6,
+            "votes":5974
+        },
+        "type":["Quick Bites"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    },
+    {
+        "name":"Bastian",
+        "cuisines":["Seafood"],
+        "average_cost_for_two":2500,
+        "user_rating":{
+            "aggregate_rating":4.5,
+            "votes":1438
+        },
+        "type":["Casual Dining","Bar"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    },
+    {
+        "name":"Tamasha",
+        "cuisines":["Finger Food", "Continental"],
+        "average_cost_for_two":1800,
+        "user_rating":{
+            "aggregate_rating":4.9,
+            "votes":3275
+        },
+        "type":["Lounge","Bar"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    },
+    {
+        "name":"Bhagat Tarachand",
+        "cuisines":["North Indian", "Street Food", "Fast Food", "Chinese"],
+        "average_cost_for_two":450,
+        "user_rating":{
+            "aggregate_rating":4.1,
+            "votes":1422
+        },
+        "type":["Casual Dining"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    },
+    {
+        "name":"Flea Bazaar Café",
+        "cuisines":["American", "Asian", "Street Food", "Indian", "Lucknowi", "Mexican", "Chinese", "Italian"],
+        "average_cost_for_two":800,
+        "user_rating":{
+            "aggregate_rating":4.4,
+            "votes":1424
+        },
+        "type":["Café"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    },
+    {
+        "name":"HITCHKI",
+        "cuisines":["Modern Indian"],
+        "average_cost_for_two":1200,
+        "user_rating":{
+            "aggregate_rating":4.7,
+            "votes":2640
+        },
+        "type":["Casual Dining","Bar"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    },
+    {
+        "name":"MRP - My Regular Place",
+        "cuisines":["Asian", "North Indian","Continental","Desserts"],
+        "average_cost_for_two":1800,
+        "user_rating":{
+            "aggregate_rating":4.0,
+            "votes":1732
+        },
+        "type":["Bar","Casual Dining"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    },
+    {
+        "name":"Mini Punjab's Lake Side",
+        "cuisines":["North Indian", "Mughlai", "Chinese"],
+        "average_cost_for_two":1500,
+        "user_rating":{
+            "aggregate_rating":3.9,
+            "votes":1825
+        },
+        "type":["Casual Dining"],
+        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+    }
+]

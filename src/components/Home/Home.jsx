@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Search from './Search/Search'
 
 export default function Home() {
+    const [value,setValue]=useState("")
+    
+    
     return (
-        <div>
+        <main>
             <h1>Home</h1>
-        </div>
+            <Search setValue={setValue}/>
+        </main>
     )
 }
