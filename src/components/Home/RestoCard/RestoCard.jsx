@@ -16,7 +16,7 @@ export default function RestoCard(props) {
                 </Box>
                 <Box className={styles.score}>
                     <span className={styles.rating}>
-                        {data.user_rating.aggregate_rating}
+                        {data.user_rating.aggregate_rating === null ?"N/A":data.user_rating.aggregate_rating}
                     </span>
                     <br></br>
                     <span className={styles.votes}>
