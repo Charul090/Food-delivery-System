@@ -1,8 +1,9 @@
-import {Add_Restaurant,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
+import {Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
 import {v1 as uuidv1} from "uuid";
 
 const initialState = {
-    data:[]
+    data:[],
+    auth:[]
 }
 
 
@@ -14,6 +15,12 @@ export default (state = initialState, { type, payload }) => {
             ...state,
             data:[...state.data,payload]
         }
+    case Add_Restaurant_Auth:
+        return {
+            ...state,
+            auth:[...state.auth,payload]
+        }
+
     case Restaurant_Info_Query:
         return {
             ...state

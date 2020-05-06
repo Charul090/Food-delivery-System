@@ -1,32 +1,40 @@
-import React,{useState} from 'react';
-import { Box, TextField,Button } from "@material-ui/core"
+import React, { useState } from 'react';
+import { Box, TextField, Button } from "@material-ui/core"
 
 export default function Step1(props) {
 
     let { name, setName, cuisines, setCuisines,
-        average,setAverage,type,setType,setStep} = props
+        average, setAverage, type, setType, setStep,
+        username, setUserName, password, setPassword } = props
 
-    
-    average=Number(average)
 
-    const [warning,setWarning]=useState("")
-    
-    const handleClick=()=>{
+    average = Number(average)
+
+    const [warning, setWarning] = useState("")
+
+    const handleClick = () => {
         setWarning("")
 
-        if(name!== "" && cuisines.length!== 0 && average >= 200 && type.length!==0){
+        if (name !== "" && cuisines.length !== 0 && average >= 200 && type.length !== 0) {
             setStep(2)
         }
-        else{
+        else {
             setWarning("Fill all the fields")
         }
     }
 
     return (
         <Box>
-            <p style={{color:"red"}}>{warning}</p>
+            <p style={{ color: "red" }}>{warning}</p>
+
             <TextField name="name" value={name} onChange={(e) => setName(e.target.value)}
                 variant="outlined" margin="dense" label="Name Of Restaurant" fullWidth={true} />
+
+            <TextField name="username" value={username} onChange={(e) => setUserName(e.target.value)}
+                variant="outlined" margin="dense" label="Username" fullWidth={true} />
+
+            <TextField name="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}
+                variant="outlined" margin="dense" label="Password" fullWidth={true} />
 
             <TextField name="cuisines" value={cuisines} onChange={(e) => setCuisines(e.target.value.split(","))}
                 variant="outlined" margin="dense" label="Cuisines" placeholder="For multiple values use comma" fullWidth={true} />

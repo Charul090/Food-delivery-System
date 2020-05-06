@@ -14,7 +14,7 @@ export default function Search(props) {
 
         setDebounce(setInterval(()=>{
             setValue(search)
-        },500))
+        },150))
 
         return () => {
             clearInterval(debounce)

@@ -7,8 +7,50 @@
             "aggregate_rating":4.9,
             "votes":1326
         },
+        "menu":[
+            {
+                "dish":"Salad",
+                "price":"240"
+            },
+            {
+                "dish":"Cocktail",
+                "price":"450"
+            },
+            {
+                "dish":"LIIT",
+                "price":"800"
+            },
+            {
+                "dish":"Biryani",
+                "price":"600"
+            },
+            {
+                "dish":"Chicken Curry",
+                "price":"500"
+            },
+            {
+                "dish":"Mutton Curry",
+                "price":"800"
+            },
+            {
+                "dish":"Veg Pulao",
+                "price":"300"
+            },
+            {
+                "dish":"Malai Kofta",
+                "price":"350"
+            },
+            {
+                "dish":"Thumb Up",
+                "price":"100"
+            },
+            {
+                "dish":"Milk Shake",
+                "price":"150"
+            }
+        ],
         "type":["Lounge","Casual Dining"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "photo_url":"https://images.unsplash.com/photo-1526234362653-3b75a0c07438?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=vishwas-katti-UrQ_BS9bLXQ-unsplash.jpg&w=1920",
         "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {

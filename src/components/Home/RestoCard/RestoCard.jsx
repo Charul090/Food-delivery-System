@@ -1,9 +1,15 @@
 import React from 'react';
 import styles from "./RestoCard.module.css";
+import {useHistory} from "react-router-dom"
 import {Box,Card, CardMedia,Button} from "@material-ui/core"
 
 export default function RestoCard(props) {
-    let {data}=props;
+    let {data,id}=props;
+    let history = useHistory();
+
+    const handleClick=()=>{
+        history.push(`/order/${id}`)
+    }
     
     return (
         <Card className={styles.card} elevation={3}>
@@ -30,7 +36,9 @@ export default function RestoCard(props) {
                 <p>Type: {data.type.join(", ")}</p>
             </Box>
             <Box className={styles.buy}>
-                <Button size="small" variant="contained" color="secondary">Order Now</Button>
+                <Button size="small" variant="contained" color="secondary" onClick={handleClick}>
+                    Order Now
+                </Button>
             </Box>
         </Card>
     )

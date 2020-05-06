@@ -5,38 +5,68 @@ import Input from './Input/Input';
 
 export default function Step2(props) {
 
-    const [count, setCount] = useState(0)
+    const [inputs, setInputs] = useState([])
+    const [warning,setWarning] = useState("")
 
-    let {success}=props
+    let { success, setStep, setMenu } = props
 
     useEffect(()=>{
-        if(success){
-            setCount(0)
+        let array=inputs.filter((elem)=>{
+            return elem.dish !== "" && elem.price !== ""
+        })
+
+        if(array.length !== inputs.length){
+            setWarning("Please fill all the fields")
         }
-    },[success])
+        else{
+            setWarning("")
+        }
+
+        setMenu([...array])
+
+    },[inputs])
+
+    useEffect(() => {
+        if (success) {
+            setInputs([])
+        }
+    }, [success])
+
 
     const handleAdd = () => {
-        if (count < 10) {
-            setCount(count + 1)
+        let count = inputs.length;
+
+        if (count < 20) {
+            let array = [...inputs]
+            let obj = { dish: "", price: "" }
+            array.push(obj)
+            setInputs(array)
         }
     }
 
     const handleRemove = () => {
+        let count = inputs.length;
         if (count > 0) {
-            setCount(count - 1)
+            let array = [...inputs]
+            array.pop();
+            setInputs(array)
         }
     }
 
-    let { setStep, setMenu } = props
+
 
     return (
         <Box>
-            <h3>Maximum 10 items can be added</h3>
-            <Input count={count} setMenu={setMenu} />
+            <h3>Maximum 20 items can be added</h3>
+            <p className={styles.warning}>{warning}</p>
+
+            {inputs.map((elem, index) => {
+                return <Input value={inputs} setInputs={setInputs} key={`${index}-x`} id={index} />
+            })}
 
             <Box className={styles.icon} mt={2}>
-                <Icon color={count >= 10 ? "disabled" : "primary"} fontSize="large" className={styles.plus} onClick={handleAdd}>add_circle</Icon>
-                <Icon color={count < 2 ? "disabled" : "secondary"} fontSize="large" className={styles.plus} onClick={handleRemove}>remove_circle</Icon>
+                <Icon color={inputs.length >= 10 ? "disabled" : "primary"} fontSize="large" className={styles.plus} onClick={handleAdd}>add_circle</Icon>
+                <Icon color={inputs.length < 1 ? "disabled" : "secondary"} fontSize="large" className={styles.plus} onClick={handleRemove}>remove_circle</Icon>
             </Box>
             <Box my={2}>
                 <Button fullWidth={true} color="primary" variant="contained" type="submit">Submit</Button>

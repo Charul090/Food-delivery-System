@@ -1,7 +1,7 @@
-import {Add_Restaurant,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
+import {Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
 import {v1 as uuidv1} from "uuid"
 
-const Add_Restaurant_Info=(data)=>{
+const Add_Restaurant_Info=(data,id)=>{
     return {
         type:Add_Restaurant,
         payload:{
@@ -12,8 +12,26 @@ const Add_Restaurant_Info=(data)=>{
                 },
             photo_url:"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
             thumb_url:"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640",
-            id:uuidv1()
+            id
         }
+    }
+}
+
+const Add_Auth_Info=(data,id)=>{
+    return {
+        type:Add_Restaurant_Auth,
+        payload:{
+            ...data,
+            id
+        }
+    }
+}
+
+const Add_Info=(data,auth)=>{
+    return dispatch => {
+        let id=uuidv1()
+        dispatch(Add_Restaurant_Info(data,id))
+        dispatch(Add_Auth_Info(auth,id))
     }
 }
 
@@ -46,4 +64,4 @@ const Restaurant_Info=()=>{
     }
 }
 
-export {Add_Restaurant_Info,Restaurant_Info}
+export {Add_Info,Restaurant_Info}
