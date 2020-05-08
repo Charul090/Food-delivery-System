@@ -1,0 +1,18 @@
+.display{
+    width:75%;
+    margin:10px auto;
+}
+
+.empty{
+    font-size: 60px;
+    color:lightgray;
+}
+
+.info{
+    width:95%;
+    margin:0 auto;
+}
+
+.name{
+    width:12%;
+}

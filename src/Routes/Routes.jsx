@@ -4,6 +4,7 @@ import Home from '../components/Home/Home';
 import UserRegister from '../components/UserRegister/UserRegister.jsx';
 import HotelRegister from '../components/HotelRegister/HotelRegister';
 import RestoPage from '../components/RestoPage/RestoPage';
+import Cart from '../components/Cart/Cart';
 
 export default function Routes() {
     return (
@@ -12,6 +13,7 @@ export default function Routes() {
             <Route path="/user-register" component={UserRegister}/>
             <Route path="/resto-register" component={HotelRegister} />
             <Route path="/order/:id" component={RestoPage}/>
+            <Route path="/cart" component={Cart} />
         </Switch>
     )
 }
