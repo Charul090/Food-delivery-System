@@ -1,0 +1,11 @@
+.display{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.display > button:nth-child(1),
+.display > button:nth-child(2){
+    width:42%;
+}

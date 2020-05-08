@@ -1,0 +1,19 @@
+.display{
+    width:95%;
+    margin:10px auto;
+}
+
+.card{
+    display: flex;
+    width:100%;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin:20px 0px;
+}
+
+.card  h4,
+.card  h2{
+    font-weight: 400;
+    margin:0;
+}

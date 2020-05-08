@@ -13,6 +13,10 @@ export default function Step2(props) {
     useEffect(()=>{
         let array=inputs.filter((elem)=>{
             return elem.dish !== "" && elem.price !== ""
+        }).map((elem,index)=>{
+            elem["key"]=`${index}-x`
+
+            return elem;
         })
 
         if(array.length !== inputs.length){

@@ -9,3 +9,27 @@
     height:400px;
     object-fit: cover;
 }
+
+.info{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.restoinfo{
+    text-align: left;
+}
+
+
+.rating{
+    padding:3px 8px;
+    font-weight: 400;
+    background-color: green;
+    color:white;
+    border-radius: 3px;
+}
+
+.menu{
+    width:100%;
+    margin-bottom: 60px;
+}

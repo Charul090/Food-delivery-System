@@ -1,9 +1,10 @@
 import userReducer from "./user/reducer.js";
 import restoReducer from "./restaurant/reducer.js"
+import cartReducer from "./cart/reducer.js"
 import {createStore,compose,combineReducers, applyMiddleware} from "redux";
 import thunk from "redux-thunk"
 
-const reducers=combineReducers({user:userReducer,restaurant:restoReducer});
+const reducers=combineReducers({user:userReducer,restaurant:restoReducer,cart:cartReducer});
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
