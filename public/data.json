@@ -71,6 +71,23 @@
             "aggregate_rating":4.6,
             "votes":5974
         },
+        "menu":[
+        {
+            "dish":"Salad",
+            "price":"240",
+            "key":"0-x"
+        },
+        {
+            "dish":"Cocktail",
+            "price":"450",
+            "key":"1-x"
+        },
+        {
+            "dish":"LIIT",
+            "price":"800",
+            "key":"2-x"
+        }
+    ],
         "type":["Quick Bites"],
         "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
         "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"

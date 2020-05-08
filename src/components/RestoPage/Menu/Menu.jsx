@@ -1,5 +1,5 @@
-import React from 'react';
-import { Box, Button, Divider } from "@material-ui/core";
+import React,{useState} from 'react';
+import { Box, Button, Divider, Dialog, DialogContent, DialogContentText, DialogActions } from "@material-ui/core";
 import {useSelector,useDispatch} from "react-redux";
 import { useParams } from "react-router-dom"
 import styles from "./Menu.module.css";
@@ -7,6 +7,10 @@ import MenuButton from "../MenuButton/MenuButton.jsx"
 import {Add_Item_Cart,Change_Restauraunt_Id,Reduce_Item_Cart} from "../../../Redux/cart/action.js"
 
 export default function Menus({ menu }) {
+
+    const [open,setOpen]=useState(false)
+    const [tempkey,setTempKey] = useState("")
+
     let cart=useSelector((state)=>state.cart)
     let cart_id=cart.id;
     let cart_items=cart.items;
@@ -27,10 +31,28 @@ export default function Menus({ menu }) {
             dispatch(Add_Item_Cart(item))  
         }
         else{
-            dispatch(Change_Restauraunt_Id(id))
-            dispatch(Add_Item_Cart(item))
+            setTempKey(key)
+            setOpen(true)
         }
         
+    }
+
+    const handleChangeCart=()=>{
+
+        let item=menu.find((elem)=>elem.key === tempkey);
+
+        let {id}=params;
+
+        dispatch(Change_Restauraunt_Id(id))
+        dispatch(Add_Item_Cart(item))
+
+        handleClose();
+
+        setTempKey("")
+    }
+
+    const handleClose=()=>{
+        setOpen(false)
     }
 
     const handleReduce=(key)=>{
@@ -57,6 +79,18 @@ export default function Menus({ menu }) {
 
     return (
         <Box className={styles.display}>
+            <Dialog open={open} onClose={handleClose}>
+                    <DialogContent>
+                        <DialogContentText>
+                            You already have items in your cart from different restaurant.
+                            Do you want to remove items from that restaurant and add this?
+                        </DialogContentText>
+                        <DialogActions>
+                            <Button color="primary" variant="contained" onClick={handleClose}>No</Button>
+                            <Button color="secondary" variant="contained" onClick={()=>handleChangeCart()}>Yes</Button>
+                        </DialogActions>
+                    </DialogContent>
+                </Dialog>
             <h1>Menu</h1>
             {elements}
         </Box>
