@@ -1,4 +1,4 @@
-import {Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
+import {Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
 import {v1 as uuidv1} from "uuid";
 
 const initialState = {
@@ -14,6 +14,20 @@ export default (state = initialState, { type, payload }) => {
         return {
             ...state,
             data:[...state.data,payload]
+        }
+
+    case Update_Restaurant_Order:
+        let array2=state.data.map((elem)=>{
+            if(elem.id === payload.id){
+                elem.order_history=[...elem.order_history,payload.order]
+            }
+
+            return elem
+        })
+
+        return {
+            ...state,
+            data:array2
         }
     case Add_Restaurant_Auth:
         return {

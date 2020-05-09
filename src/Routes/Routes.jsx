@@ -5,6 +5,7 @@ import UserRegister from '../components/UserRegister/UserRegister.jsx';
 import HotelRegister from '../components/HotelRegister/HotelRegister';
 import RestoPage from '../components/RestoPage/RestoPage';
 import Cart from '../components/Cart/Cart';
+import Login from '../components/Login/Login';
 
 export default function Routes() {
     return (
@@ -12,8 +13,9 @@ export default function Routes() {
             <Route path="/" exact component={Home}/>
             <Route path="/user-register" component={UserRegister}/>
             <Route path="/resto-register" component={HotelRegister} />
-            <Route path="/order/:id" component={RestoPage}/>
+            <Route path="/restaurant/:id" component={RestoPage}/>
             <Route path="/cart" component={Cart} />
+            <Route path="/login" component={Login} />
         </Switch>
     )
 }

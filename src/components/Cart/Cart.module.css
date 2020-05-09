@@ -16,3 +16,16 @@
 .name{
     width:12%;
 }
+
+.cost{
+    text-align: left;
+    font-size: 24px;
+    padding:10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.cost > h4{
+    margin: 5px 0px;
+}

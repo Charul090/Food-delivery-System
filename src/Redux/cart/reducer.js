@@ -1,4 +1,4 @@
-import { Add_Item, Reduce_Item, Change_Restauraunt } from "./actiontypes.js"
+import { Add_Item, Reduce_Item, Change_Restauraunt ,Clear_Items} from "./actiontypes.js"
 
 const initialState = {
     id: "",
@@ -30,6 +30,13 @@ export default (state = initialState, { type, payload }) => {
             return {
                 ...state,
                 items: [...array]
+            }
+
+        case Clear_Items:
+            
+            return {
+                ...state,
+                ...initialState
             }
         case Change_Restauraunt:
             return {

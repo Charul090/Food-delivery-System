@@ -8,6 +8,7 @@ import styles from "./Top.module.css"
 export default function Top() {
 
     const {items}=useSelector((state)=>state.cart);
+    const {auth}=useSelector((state)=>state.user)
 
     let count=0;
 
@@ -27,7 +28,7 @@ export default function Top() {
             </Box>
             <Box>
                 <p>
-                    <Link to="/login">Login</Link>/
+                    <Link to="/login">{auth?"Logout":"Login"}</Link>/
                     <Link to="/cart">
                         <Badge color="secondary" badgeContent={count} overlap="circle">
                             <IconButton>
