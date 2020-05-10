@@ -1,14 +1,33 @@
-import {Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
+import {Restaurant_Login_Failure,Restaurant_Login_Success,Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
 import {v1 as uuidv1} from "uuid";
 
 const initialState = {
     data:[],
-    auth:[]
+    login_data:[],
+    auth:false,
+    logged_user:{},
+    message:""
 }
 
 
 export default (state = initialState, { type, payload }) => {
     switch (type) {
+
+    case Restaurant_Login_Failure:
+        return {
+            ...state,
+            auth:false,
+            message:payload,
+            logged_user:{}
+        }
+
+    case Restaurant_Login_Success:
+        return {
+            ...state,
+            logged_user:payload,
+            auth:true,
+            message:""
+        }
 
     case Add_Restaurant:
         return {
@@ -32,7 +51,7 @@ export default (state = initialState, { type, payload }) => {
     case Add_Restaurant_Auth:
         return {
             ...state,
-            auth:[...state.auth,payload]
+            login_data:[...state.login_data,payload]
         }
 
     case Restaurant_Info_Query:
@@ -41,14 +60,38 @@ export default (state = initialState, { type, payload }) => {
         }
 
     case Restaurant_Info_Success:
-        let array=payload.map((elem)=>{
-            elem.id = uuidv1();
-            return elem
+
+        let data=[];
+        let login_data=[];
+
+        payload.forEach((elem)=>{
+            let id = uuidv1();
+            data.push({
+                name:elem.name,
+                cuisines:elem.cuisines,
+                average_cost_for_two:elem.average_cost_for_two,
+                user_rating:elem.user_rating,
+                menu:elem.menu,
+                order_history:elem.order_history,
+                type:elem.type,
+                photo_url:elem.photo_url,
+                thumb_url:elem.thumb_url,
+                id
+            })
+
+            login_data.push({
+                id,
+                username:elem.username,
+                password:elem.password
+            })
         })
+
         return {
             ...state,
-            data:array
+            data,
+            login_data
         }
+
     case Restaurant_Info_Failure:
         return {
             ...state

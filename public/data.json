@@ -1,6 +1,8 @@
 [
     {
         "name":"Lord of the Drinks",
+        "username":"drink_lord",
+        "password":"drink_lord",
         "cuisines":["Finger Food","Continental", "European","Italian"],
         "average_cost_for_two":1500,
         "user_rating":{
@@ -66,6 +68,8 @@
     },
     {
         "name":"Joey's Pizza",
+        "username":"joey",
+        "password":"joey",
         "cuisines":["Pizza"],
         "average_cost_for_two":800,
         "user_rating":{
@@ -96,6 +100,8 @@
     },
     {
         "name":"Bastian",
+        "username":"mrp",
+        "password":"mrp",
         "cuisines":["Seafood"],
         "average_cost_for_two":2500,
         "user_rating":{
@@ -108,6 +114,8 @@
     },
     {
         "name":"Tamasha",
+        "username":"tamasha",
+        "password":"tamsha",
         "cuisines":["Finger Food", "Continental"],
         "average_cost_for_two":1800,
         "user_rating":{
@@ -120,6 +128,8 @@
     },
     {
         "name":"Bhagat Tarachand",
+        "username":"tarachand",
+        "password":"tarachand",
         "cuisines":["North Indian", "Street Food", "Fast Food", "Chinese"],
         "average_cost_for_two":450,
         "user_rating":{
@@ -132,6 +142,8 @@
     },
     {
         "name":"Flea Bazaar Café",
+        "username":"flea_bazaar",
+        "password":"flea_bazaar",
         "cuisines":["American", "Asian", "Street Food", "Indian", "Lucknowi", "Mexican", "Chinese", "Italian"],
         "average_cost_for_two":800,
         "user_rating":{
@@ -144,6 +156,8 @@
     },
     {
         "name":"HITCHKI",
+        "username":"hitchki",
+        "password":"hitchki",
         "cuisines":["Modern Indian"],
         "average_cost_for_two":1200,
         "user_rating":{
@@ -156,6 +170,8 @@
     },
     {
         "name":"MRP - My Regular Place",
+        "username":"mrp",
+        "password":"mrp",
         "cuisines":["Asian", "North Indian","Continental","Desserts"],
         "average_cost_for_two":1800,
         "user_rating":{
@@ -168,6 +184,8 @@
     },
     {
         "name":"Mini Punjab's Lake Side",
+        "username":"mini_punjab",
+        "password":"mini_punjab",
         "cuisines":["North Indian", "Mughlai", "Chinese"],
         "average_cost_for_two":1500,
         "user_rating":{
@@ -180,6 +198,8 @@
     },
     {
         "name":"Yeda Republic",
+        "username":"yeda",
+        "password":"yeda",
         "cuisines":["Finger Food", "Pizza", "Seafood"],
         "average_cost_for_two":2200,
         "user_rating":{

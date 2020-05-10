@@ -26,6 +26,9 @@ export default function Bottom() {
                 <Box>
                     <Link to="/orders">Orders</Link>
                 </Box> : null}
+            <Box>
+                <Link to="/resto-login">Restaurant Login</Link>
+            </Box>
         </Box>
     )
 }
