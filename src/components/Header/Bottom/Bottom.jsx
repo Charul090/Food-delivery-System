@@ -1,9 +1,13 @@
 import React from 'react'
-import {Box} from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import styles from "./Bottom.module.css"
 import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
 
 export default function Bottom() {
+
+    let { auth, logged_user } = useSelector((state) => state.user)
+
     return (
         <Box className={styles.display}>
             <Box>
@@ -18,6 +22,10 @@ export default function Bottom() {
             <Box>
                 <Link to="/dashboard">Dashboard</Link>
             </Box>
+            {auth ?
+                <Box>
+                    <Link to="/orders">Orders</Link>
+                </Box> : null}
         </Box>
     )
 }

@@ -42,7 +42,7 @@ export default (state = initialState, { type, payload }) => {
 
     case Restaurant_Info_Success:
         let array=payload.map((elem)=>{
-            elem.id=uuidv1();
+            elem.id = uuidv1();
             return elem
         })
         return {

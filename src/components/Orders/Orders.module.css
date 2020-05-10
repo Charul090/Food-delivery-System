@@ -1,0 +1,43 @@
+.display{
+    width:50%;
+    margin:10px auto;
+    padding:5px 0px;
+}
+
+.container{
+    width:95%;
+    margin:5px auto 20px;
+    text-align: left;
+    padding-bottom: 6px;
+}
+
+.container h2 {
+    font-weight: 400;
+    margin:5px 5px;
+}
+
+.container h3{
+    font-weight: 400;
+    margin:20px 5px 0px;
+}
+
+.restoinfo h5{
+    font-weight: 400;
+    margin:5px;
+    color:#757575;
+}
+
+.list{
+    margin:0px auto;
+    width:95%;
+}
+
+
+.name{
+    width:12%;
+}
+
+.empty{
+    font-size: 33px;
+    color:lightgray;
+}

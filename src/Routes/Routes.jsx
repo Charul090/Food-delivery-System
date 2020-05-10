@@ -6,6 +6,7 @@ import HotelRegister from '../components/HotelRegister/HotelRegister';
 import RestoPage from '../components/RestoPage/RestoPage';
 import Cart from '../components/Cart/Cart';
 import Login from '../components/Login/Login';
+import Orders from '../components/Orders/Orders';
 
 export default function Routes() {
     return (
@@ -16,6 +17,7 @@ export default function Routes() {
             <Route path="/restaurant/:id" component={RestoPage}/>
             <Route path="/cart" component={Cart} />
             <Route path="/login" component={Login} />
+            <Route path="/orders" component={Orders} />
         </Switch>
     )
 }

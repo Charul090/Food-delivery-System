@@ -48,9 +48,9 @@ export default function Cart() {
             //User Update
             let obj=user_data.find((elem)=>elem.id === logged_user.id)
 
-            let order={...items,time:new Date().toLocaleString()}
+            let order={resto_id:id,items,time:new Date().toLocaleString()}
 
-            obj.order_history=[...obj.order_history,order];        
+            obj.order_history=[order,...obj.order_history];        
 
             dispatch(Update_User_Info(obj))
 
@@ -59,6 +59,8 @@ export default function Cart() {
             dispatch(Update_Order({order,id}))
 
             dispatch(Clear_Cart());
+
+            history.push("/orders")
         }
     }
 
