@@ -56,6 +56,8 @@ export default function Cart() {
 
             //Restaurant Update
 
+            order={...order,user:obj.username}
+
             dispatch(Update_Order({order,id}))
 
             dispatch(Clear_Cart());

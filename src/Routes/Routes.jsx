@@ -8,6 +8,7 @@ import Cart from '../components/Cart/Cart';
 import Login from '../components/Login/Login';
 import Orders from '../components/Orders/Orders';
 import HotelLogin from '../components/HotelLogin/HotelLogin';
+import Dashboard from '../components/Dashboard/Dashboard';
 
 export default function Routes() {
     return (
@@ -20,6 +21,7 @@ export default function Routes() {
             <Route path="/login" component={Login} />
             <Route path="/orders" component={Orders} />
             <Route path="/resto-login" component={HotelLogin} />
+            <Route path="/dashboard/:id" component={Dashboard} />
         </Switch>
     )
 }

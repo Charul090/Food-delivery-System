@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from "react-redux"
+import { useSelector, useDispatch } from "react-redux";
+import {useHistory} from "react-router-dom"
 import { Box, TextField, Button } from "@material-ui/core";
 import styles from "./HotelLogin.module.css";
 import { Login_Success, Login_Failure } from "../../Redux/restaurant/action.js"
@@ -12,6 +13,8 @@ export default function HotelLogin() {
 
     const { login_data } = useSelector((state) => state.restaurant)
     const {auth} = useSelector((state)=>state.user)
+
+    let history = useHistory();
 
     let dispatch = useDispatch();
 
@@ -42,6 +45,7 @@ export default function HotelLogin() {
         else {
             if(status.password === password){
                 dispatch(Login_Success(status))
+                history.push(`/dashboard/${status.id}`)
             }
             else{
                 dispatch(Login_Failure())
@@ -51,7 +55,7 @@ export default function HotelLogin() {
 
     if(auth){
         return (
-            <Redirect to="/"></Redirect>
+            <Redirect to="/login"></Redirect>
         )
     }
 

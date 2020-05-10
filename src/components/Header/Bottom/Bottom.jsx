@@ -19,9 +19,6 @@ export default function Bottom() {
             <Box>
                 <Link to="/resto-register">Hotel Register</Link>
             </Box>
-            <Box>
-                <Link to="/dashboard">Dashboard</Link>
-            </Box>
             {auth ?
                 <Box>
                     <Link to="/orders">Orders</Link>
