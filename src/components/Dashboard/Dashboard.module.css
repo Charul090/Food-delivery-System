@@ -41,3 +41,62 @@
     margin:5px 0px;
     color:lightgray;
 }
+
+.menucontainer{
+    width:95%;
+    padding:10px;
+    margin-bottom: 30px;
+}
+
+.menu{
+    max-width:100%;
+    padding:10px;
+    margin:0px auto;
+    border: 1px solid lightgray;
+}
+
+.menu > h2{
+    font-weight: 400;
+}
+
+.menulist{
+    margin:10px auto;
+    width:75%;
+}
+
+.dish{
+   width:10%;
+}
+
+.edit{
+    display: flex;
+    flex-direction: row-reverse;
+    padding:0px 20px 10px;
+}
+
+@media all and (max-width:762px){
+    .info {
+        flex-direction: column;
+    }
+
+    .left{
+        width:95%;
+        margin:10px auto;
+    }
+
+    .right{
+        width:95%;
+        margin:10px auto;
+    }
+}
+
+@media all and (max-width:540px){
+
+    .menulist{
+        width:95%;
+    }
+
+    .dish{
+        width:42%;
+     }
+}

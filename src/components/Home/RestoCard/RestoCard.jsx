@@ -32,7 +32,7 @@ export default function RestoCard(props) {
             </Box>
             <Box className={styles.info}>
                 <p>Cuisines: {data.cuisines.join(", ")}</p>
-                <p>Cost For Two: {data.average_cost_for_two}</p>
+                <p>Cost For Two: ₹{data.average_cost_for_two}</p>
                 <p>Type: {data.type.join(", ")}</p>
             </Box>
             <Box className={styles.buy}>
