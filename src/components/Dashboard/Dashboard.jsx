@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { useParams } from "react-router-dom";
+import { useParams,useHistory } from "react-router-dom";
 import { Box, List, ListItem, ListItemText, Divider, ListItemSecondaryAction, IconButton, Fab } from "@material-ui/core";
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import EditIcon from '@material-ui/icons/Edit';
@@ -9,6 +9,7 @@ import styles from "./Dashboard.module.css"
 export default function Dashboard() {
 
     let params = useParams();
+    let history = useHistory();
 
     let { data } = useSelector((state) => state.restaurant)
 
@@ -20,7 +21,9 @@ export default function Dashboard() {
 
     let { menu } = resto
 
-    console.log(menu)
+    const handleInfoEdit=()=>{
+        history.push(`/dashboard/${params.id}/edit`)
+    }
 
     return (
         <main>
@@ -36,7 +39,7 @@ export default function Dashboard() {
                         <h3>Votes: {resto.user_rating.votes}</h3>
                         <Box className={styles.edit}>
                             <Fab size="small" color="primary" aria-label="add">
-                                <EditIcon />
+                                <EditIcon onClick={handleInfoEdit}/>
                             </Fab>
                         </Box>
                     </Box>

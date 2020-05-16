@@ -1,4 +1,4 @@
-import {Restaurant_Login_Failure,Restaurant_Login_Success,Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
+import {Change_Info,Restaurant_Login_Failure,Restaurant_Login_Success,Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
 import {v1 as uuidv1} from "uuid"
 
 const Add_Restaurant_Info=(data,id)=>{
@@ -14,6 +14,13 @@ const Add_Restaurant_Info=(data,id)=>{
             thumb_url:"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640",
             id
         }
+    }
+}
+
+const Change_Restuarant_Info=(data)=>{
+    return {
+        type:Change_Info,
+        payload:data
     }
 }
 
@@ -85,4 +92,4 @@ const Restaurant_Info=()=>{
     }
 }
 
-export {Add_Info,Restaurant_Info,Update_Order,Login_Success,Login_Failure}
+export {Change_Restuarant_Info,Add_Info,Restaurant_Info,Update_Order,Login_Success,Login_Failure}

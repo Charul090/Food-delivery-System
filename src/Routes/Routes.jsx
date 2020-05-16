@@ -9,6 +9,7 @@ import Login from '../components/Login/Login';
 import Orders from '../components/Orders/Orders';
 import HotelLogin from '../components/HotelLogin/HotelLogin';
 import Dashboard from '../components/Dashboard/Dashboard';
+import EditInfo from '../components/EditInfo/EditInfo';
 
 export default function Routes() {
     return (
@@ -21,7 +22,8 @@ export default function Routes() {
             <Route path="/login" component={Login} />
             <Route path="/orders" component={Orders} />
             <Route path="/resto-login" component={HotelLogin} />
-            <Route path="/dashboard/:id" component={Dashboard} />
+            <Route path="/dashboard/:id" exact component={Dashboard} />
+            <Route path="/dashboard/:id/edit" component={EditInfo} />
         </Switch>
     )
 }
