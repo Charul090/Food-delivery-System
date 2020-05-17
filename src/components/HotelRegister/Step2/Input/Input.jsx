@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Box, TextField, Button, Icon } from "@material-ui/core";
+import { Box, TextField} from "@material-ui/core";
 import styles from "../Step2.module.css"
 
 export default function Input({ value, setInputs, id }) {
@@ -23,10 +23,3 @@ export default function Input({ value, setInputs, id }) {
         </Box>
     )
 }
-
-
-/*
-<Box className={styles.container}>
-
-        </Box>
-*/

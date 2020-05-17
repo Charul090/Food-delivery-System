@@ -69,7 +69,7 @@ export default function Step2(props) {
             })}
 
             <Box className={styles.icon} mt={2}>
-                <Icon color={inputs.length >= 10 ? "disabled" : "primary"} fontSize="large" className={styles.plus} onClick={handleAdd}>add_circle</Icon>
+                <Icon color={inputs.length >= 20 ? "disabled" : "primary"} fontSize="large" className={styles.plus} onClick={handleAdd}>add_circle</Icon>
                 <Icon color={inputs.length < 1 ? "disabled" : "secondary"} fontSize="large" className={styles.plus} onClick={handleRemove}>remove_circle</Icon>
             </Box>
             <Box my={2}>

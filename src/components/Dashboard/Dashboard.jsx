@@ -22,7 +22,11 @@ export default function Dashboard() {
     let { menu } = resto
 
     const handleInfoEdit=()=>{
-        history.push(`/dashboard/${params.id}/edit`)
+        history.push(`/dashboard/${params.id}/editinfo`)
+    }
+
+    const handleMenuEdit=()=>{
+        history.push(`/dashboard/${params.id}/editmenu`)
     }
 
     return (
@@ -48,7 +52,7 @@ export default function Dashboard() {
                             order_history.map((elem, index) => {
                                 let cost = 0;
                                 return (
-                                    <Box className={styles.container}>
+                                    <Box className={styles.container} key={`${index}-x`}>
                                         <Box className={styles.order}>
                                             <h4 className={styles.user}>User:{elem.user}</h4>
                                             <h5 className={styles.time}>{elem.time}</h5>
@@ -79,7 +83,7 @@ export default function Dashboard() {
                             <List>
                                 {menu.map((elem, index) => {
                                     return (
-                                        <ListItem divider={menu.length - 1 === index ? false : true}>
+                                        <ListItem key={`${index}-x`} divider={menu.length - 1 === index ? false : true}>
                                             <ListItemText className={styles.dish} primary={elem.dish}></ListItemText>
                                             <ListItemText primary={`₹${elem.price}`}></ListItemText>
                                             <ListItemSecondaryAction>
@@ -94,7 +98,7 @@ export default function Dashboard() {
                         </Box>
                         <Box className={styles.edit}>
                             <Fab size="small" color="primary" aria-label="add">
-                                <EditIcon />
+                                <EditIcon onClick={handleMenuEdit}/>
                             </Fab>
                         </Box>
                     </Box>

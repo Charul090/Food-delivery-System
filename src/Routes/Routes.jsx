@@ -10,6 +10,7 @@ import Orders from '../components/Orders/Orders';
 import HotelLogin from '../components/HotelLogin/HotelLogin';
 import Dashboard from '../components/Dashboard/Dashboard';
 import EditInfo from '../components/EditInfo/EditInfo';
+import EditMenu from '../components/EditMenu/EditMenu';
 
 export default function Routes() {
     return (
@@ -23,7 +24,8 @@ export default function Routes() {
             <Route path="/orders" component={Orders} />
             <Route path="/resto-login" component={HotelLogin} />
             <Route path="/dashboard/:id" exact component={Dashboard} />
-            <Route path="/dashboard/:id/edit" component={EditInfo} />
+            <Route path="/dashboard/:id/editinfo" component={EditInfo} />
+            <Route path="/dashboard/:id/editmenu" component={EditMenu} />
         </Switch>
     )
 }

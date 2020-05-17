@@ -7,6 +7,8 @@ import {Change_Restuarant_Info} from "../../Redux/restaurant/action.js"
 
 export default function EditInfo() {
 
+    const [warning,setWarning] = useState()
+
     let params = useParams()
     let history = useHistory()
 
@@ -31,22 +33,32 @@ export default function EditInfo() {
 
     const handleSubmit = (e)=>{
         e.preventDefault()
+
+        setWarning("")
         
         let name = name_input.current.value
         let cuisines = cuisines_input.current.value.split(",")
         let average = average_input.current.value
         let type = type_input.current.value.split(",")
 
-        let obj={
-            name,cuisines,average,type,id
-        }
+        if(name!== "" && cuisines[0] !== "" && average !== "" && type[0] !== ""){
+            let obj={
+                name,cuisines,average,type,id
+            }
 
-        dispatch(Change_Restuarant_Info(obj))
-        history.goBack()
+            console.log(obj)
+
+            dispatch(Change_Restuarant_Info(obj))
+            history.goBack()
+        }
+        else{
+            setWarning("Do no leave fields empty")
+        }
     }
 
     return (
         <main className={styles.display}>
+            <p className={styles.warning}>{warning === ""?null:warning}</p>
             <form onSubmit={handleSubmit}>
                 <TextField name="name" inputRef={name_input} defaultValue={name}
                     variant="outlined" margin="dense" label="Name Of Restaurant" fullWidth={true} />
