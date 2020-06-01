@@ -1,15 +1,17 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import { useParams,useHistory } from "react-router-dom";
-import { Box, List, ListItem, ListItemText, Divider, ListItemSecondaryAction, IconButton, Fab } from "@material-ui/core";
+import { useParams, useHistory } from "react-router-dom";
+import { Box, List, ListItem, ListItemText, Divider, ListItemSecondaryAction, IconButton, Fab, Button } from "@material-ui/core";
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever';
 import EditIcon from '@material-ui/icons/Edit';
 import styles from "./Dashboard.module.css"
+import {Resto_logout} from "../../Redux/restaurant/action.js"
 
 export default function Dashboard() {
 
     let params = useParams();
     let history = useHistory();
+    let dispatch = useDispatch()
 
     let { data } = useSelector((state) => state.restaurant)
 
@@ -21,17 +23,23 @@ export default function Dashboard() {
 
     let { menu } = resto
 
-    const handleInfoEdit=()=>{
+    const handleInfoEdit = () => {
         history.push(`/dashboard/${params.id}/editinfo`)
     }
 
-    const handleMenuEdit=()=>{
+    const handleMenuEdit = () => {
         history.push(`/dashboard/${params.id}/editmenu`)
+    }
+
+    const handleLogout=()=>{
+        dispatch(Resto_logout())
+        history.push("/business")
     }
 
     return (
         <main>
             <Box>
+                <h1>Dashboard</h1>
                 <Box className={styles.info}>
                     <Box className={styles.left}>
                         <img src={resto.photo_url} alt="Restaurant" className={styles.img} />
@@ -41,9 +49,12 @@ export default function Dashboard() {
                         <h3>Type: {resto.type.join(",")}</h3>
                         <h3>Rating: {resto.user_rating.aggregate_rating}</h3>
                         <h3>Votes: {resto.user_rating.votes}</h3>
+                        <Box className={styles.logout}>
+                            <Button variant="contained" onClick={handleLogout} color="secondary" size="small">Logout</Button>
+                        </Box>
                         <Box className={styles.edit}>
                             <Fab size="small" color="primary" aria-label="add">
-                                <EditIcon onClick={handleInfoEdit}/>
+                                <EditIcon onClick={handleInfoEdit} />
                             </Fab>
                         </Box>
                     </Box>
@@ -98,7 +109,7 @@ export default function Dashboard() {
                         </Box>
                         <Box className={styles.edit}>
                             <Fab size="small" color="primary" aria-label="add">
-                                <EditIcon onClick={handleMenuEdit}/>
+                                <EditIcon onClick={handleMenuEdit} />
                             </Fab>
                         </Box>
                     </Box>

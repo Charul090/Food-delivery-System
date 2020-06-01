@@ -1,5 +1,12 @@
-import {Change_Menu,Change_Info,Restaurant_Login_Failure,Restaurant_Login_Success,Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
+import {Logout,Change_Menu,Change_Info,Restaurant_Login_Failure,Restaurant_Login_Success,Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure} from "./actiontypes.js";
 import {v1 as uuidv1} from "uuid"
+
+
+const Resto_logout=()=>{
+    return{
+        type:Logout
+    }
+}
 
 const Add_Restaurant_Info=(data,id)=>{
     return {
@@ -99,4 +106,4 @@ const Restaurant_Info=()=>{
     }
 }
 
-export {Change_Restuarant_Menu,Change_Restuarant_Info,Add_Info,Restaurant_Info,Update_Order,Login_Success,Login_Failure}
+export {Resto_logout,Change_Restuarant_Menu,Change_Restuarant_Info,Add_Info,Restaurant_Info,Update_Order,Login_Success,Login_Failure}

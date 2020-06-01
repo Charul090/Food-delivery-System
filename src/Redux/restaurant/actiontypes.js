@@ -9,5 +9,7 @@ const Restaurant_Login_Success = "Restaurant_Login_Success";
 const Change_Info = "Change_Info"
 const Change_Menu="Change_Menu"
 
+const Logout="Logout"
 
-export {Change_Menu,Change_Info,Restaurant_Login_Failure,Restaurant_Login_Success,Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure}
+
+export {Logout,Change_Menu,Change_Info,Restaurant_Login_Failure,Restaurant_Login_Success,Update_Restaurant_Order,Add_Restaurant,Add_Restaurant_Auth,Restaurant_Info_Query,Restaurant_Info_Success,Restaurant_Info_Failure}
