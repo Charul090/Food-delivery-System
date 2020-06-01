@@ -3,6 +3,7 @@ import { connect } from 'react-redux'
 import { TextField, Box, Button } from '@material-ui/core';
 import styles from "./UserRegister.module.css";
 import { Register_User } from "../../Redux/user/action.js"
+import Header from '../Header/Header';
 
 export class UserRegister extends Component {
     constructor(props) {
@@ -62,7 +63,7 @@ export class UserRegister extends Component {
                     username: "",
                     email: "",
                     password: "",
-                    warning:"Registration Successful"
+                    warning: "Registration Successful"
                 })
             }
             else {
@@ -73,9 +74,9 @@ export class UserRegister extends Component {
 
 
         }
-        else{
+        else {
             this.setState({
-                warning:"Please fill all the fields"
+                warning: "Please fill all the fields"
             })
         }
 
@@ -87,27 +88,30 @@ export class UserRegister extends Component {
         let { warning } = this.state
 
         return (
-            <main>
-                <h1>Register</h1>
-                <Box className={styles.container}>
-                    <p style={{ color: "red" }}>{warning}</p>
-                    <form onSubmit={this.handleSubmit}>
-                        <TextField margin="dense" value={this.state.firstname} name="firstname"
-                            onChange={this.handleChange} variant="outlined" label="Name" fullWidth={true} />
+            <>
+                <Header />
+                <main>
+                    <h1>Register</h1>
+                    <Box className={styles.container}>
+                        <p style={{ color: "red" }}>{warning}</p>
+                        <form onSubmit={this.handleSubmit}>
+                            <TextField margin="dense" value={this.state.firstname} name="firstname"
+                                onChange={this.handleChange} variant="outlined" label="Name" fullWidth={true} />
 
-                        <TextField margin="dense" value={this.state.username} name="username"
-                            onChange={this.handleChange} variant="outlined" label="Username" fullWidth={true} />
+                            <TextField margin="dense" value={this.state.username} name="username"
+                                onChange={this.handleChange} variant="outlined" label="Username" fullWidth={true} />
 
-                        <TextField margin="dense" value={this.state.name} name="email"
-                            onChange={this.handleChange} variant="outlined" label="Email" type="mail" fullWidth={true} />
+                            <TextField margin="dense" value={this.state.name} name="email"
+                                onChange={this.handleChange} variant="outlined" label="Email" type="mail" fullWidth={true} />
 
-                        <TextField margin="dense" value={this.state.password} name="password"
-                            onChange={this.handleChange} variant="outlined" label="Password" type="password" fullWidth={true} />
+                            <TextField margin="dense" value={this.state.password} name="password"
+                                onChange={this.handleChange} variant="outlined" label="Password" type="password" fullWidth={true} />
 
-                        <Button fullWidth={true} color="primary" variant="contained" type="submit">Register</Button>
-                    </form>
-                </Box>
-            </main>
+                            <Button fullWidth={true} color="primary" variant="contained" type="submit">Register</Button>
+                        </form>
+                    </Box>
+                </main>
+            </>
         )
     }
 }

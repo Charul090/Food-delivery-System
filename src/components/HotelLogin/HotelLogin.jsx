@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from "react-redux";
-import {useHistory} from "react-router-dom"
+import { useHistory } from "react-router-dom"
 import { Box, TextField, Button } from "@material-ui/core";
 import styles from "./HotelLogin.module.css";
 import { Login_Success, Login_Failure } from "../../Redux/restaurant/action.js"
 import { Redirect } from 'react-router-dom';
+import Header2 from "../Header2/Header2.jsx"
 
 export default function HotelLogin() {
 
@@ -12,7 +13,7 @@ export default function HotelLogin() {
     const [password, setPassword] = useState("");
 
     const { login_data } = useSelector((state) => state.restaurant)
-    const {auth} = useSelector((state)=>state.user)
+    const { auth } = useSelector((state) => state.user)
 
     let history = useHistory();
 
@@ -43,38 +44,41 @@ export default function HotelLogin() {
             dispatch(Login_Failure())
         }
         else {
-            if(status.password === password){
+            if (status.password === password) {
                 dispatch(Login_Success(status))
                 history.push(`/dashboard/${status.id}`)
             }
-            else{
+            else {
                 dispatch(Login_Failure())
             }
         }
     }
 
-    if(auth){
+    if (auth) {
         return (
             <Redirect to="/login"></Redirect>
         )
     }
 
     return (
-        <main>
-            <h1>Restaurant Login</h1>
-            <Box className={styles.display}>
-                <form onSubmit={handleSubmit}>
-                    <TextField margin="dense" value={username} name="username"
-                        onChange={handleChange} variant="outlined" label="Username" fullWidth={true} />
+        <>
+            <Header2 />
+            <main>
+                <h1>Restaurant Login</h1>
+                <Box className={styles.display}>
+                    <form onSubmit={handleSubmit}>
+                        <TextField margin="dense" value={username} name="username"
+                            onChange={handleChange} variant="outlined" label="Username" fullWidth={true} />
 
-                    <TextField margin="dense" value={password} name="password"
-                        onChange={handleChange} variant="outlined" label="Password" type="password" fullWidth={true} />
+                        <TextField margin="dense" value={password} name="password"
+                            onChange={handleChange} variant="outlined" label="Password" type="password" fullWidth={true} />
 
-                    <Box mt={2}>
-                        <Button color="primary" type="submit" fullWidth={true} variant="contained">Login</Button>
-                    </Box>
-                </form>
-            </Box>
-        </main>
+                        <Box mt={2}>
+                            <Button color="primary" type="submit" fullWidth={true} variant="contained">Login</Button>
+                        </Box>
+                    </form>
+                </Box>
+            </main>
+        </>
     )
 }

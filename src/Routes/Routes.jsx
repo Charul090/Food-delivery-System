@@ -11,6 +11,7 @@ import HotelLogin from '../components/HotelLogin/HotelLogin';
 import Dashboard from '../components/Dashboard/Dashboard';
 import EditInfo from '../components/EditInfo/EditInfo';
 import EditMenu from '../components/EditMenu/EditMenu';
+import BusinessHome from '../components/BusinessHome/BusinessHome';
 
 export default function Routes() {
     return (
@@ -23,6 +24,7 @@ export default function Routes() {
             <Route path="/login" component={Login} />
             <Route path="/orders" component={Orders} />
             <Route path="/resto-login" component={HotelLogin} />
+            <Route path="/business" component={BusinessHome} />
             <Route path="/dashboard/:id" exact component={Dashboard} />
             <Route path="/dashboard/:id/editinfo" component={EditInfo} />
             <Route path="/dashboard/:id/editmenu" component={EditMenu} />

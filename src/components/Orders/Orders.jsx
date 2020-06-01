@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useSelector } from "react-redux"
 import styles from "./Orders.module.css";
 import { Box, List, ListItem, ListItemText, Paper, Divider } from "@material-ui/core"
+import Header from '../Header/Header';
 
 export default function Orders() {
 
@@ -24,45 +25,52 @@ export default function Orders() {
 
     if (order_history.length === 0 || order_history === undefined) {
         return (
-            <main>
-                <h1 className={styles.empty}>You have no orders</h1>
-            </main>
+            <>
+                <Header />
+                <main>
+                    <h1 className={styles.empty}>You have no orders</h1>
+                </main>
+            </>
+
         )
     }
 
     return (
-        <main>
-            <h1>Order's</h1>
-            <Paper className={styles.display} elevation={2}>
-                {order_history.map((elem, index) => {
-                    let cost = 0;
-                    return (
-                        <Box className={styles.container}>
-                            <Box className={styles.restoinfo}>
-                                <h2>{resto_names[index]}</h2>
-                                <h5>{elem.time}</h5>
+        <>
+            <Header />
+            <main>
+                <h1>Order's</h1>
+                <Paper className={styles.display} elevation={2}>
+                    {order_history.map((elem, index) => {
+                        let cost = 0;
+                        return (
+                            <Box className={styles.container}>
+                                <Box className={styles.restoinfo}>
+                                    <h2>{resto_names[index]}</h2>
+                                    <h5>{elem.time}</h5>
+                                </Box>
+                                <Box className={styles.order}>
+                                    <h3>Order</h3>
+                                    <List className={styles.list}>
+                                        {elem.items.map((item, index) => {
+                                            cost += (item.count * item.price)
+                                            return (
+                                                <ListItem divider={elem.items.length - 1 === index ? false : true} key={`${index}-x`}>
+                                                    <ListItemText className={styles.name} primary={item.dish} secondary={`₹${item.price}`} />
+                                                    <ListItemText primary={`x${item.count}`} />
+                                                    <ListItemText primary={`₹${item.count * item.price}`} />
+                                                </ListItem>
+                                            )
+                                        })}
+                                    </List>
+                                    <h3>Total:₹{cost}</h3>
+                                    {order_history.length - 1 === index ? null : <Divider variant="inset" />}
+                                </Box>
                             </Box>
-                            <Box className={styles.order}>
-                                <h3>Order</h3>
-                                <List className={styles.list}>
-                                    {elem.items.map((item, index) => {
-                                        cost += (item.count * item.price)
-                                        return (
-                                            <ListItem divider={elem.items.length - 1 === index ? false : true} key={`${index}-x`}>
-                                                <ListItemText className={styles.name} primary={item.dish} secondary={`₹${item.price}`} />
-                                                <ListItemText primary={`x${item.count}`} />
-                                                <ListItemText primary={`₹${item.count * item.price}`} />
-                                            </ListItem>
-                                        )
-                                    })}
-                                </List>
-                                <h3>Total:₹{cost}</h3>
-                                {order_history.length - 1 === index ? null : <Divider variant="inset" />}
-                            </Box>
-                        </Box>
-                    )
-                })}
-            </Paper>
-        </main>
+                        )
+                    })}
+                </Paper>
+            </main>
+        </>
     )
 }
