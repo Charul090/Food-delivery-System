@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom"
-import { colors, Paper, Box, List, ListItem, ListItemText, ListItemSecondaryAction, IconButton, Button } from "@material-ui/core";
+import { useMediaQuery, Paper, Box, List, ListItem, ListItemText, ListItemSecondaryAction, IconButton, Button } from "@material-ui/core";
 import RemoveCircleOutlineRoundedIcon from '@material-ui/icons/RemoveCircleOutlineRounded';
 import AddCircleOutlineRoundedIcon from '@material-ui/icons/AddCircleOutlineRounded';
 import styles from "./Cart.module.css";
@@ -27,6 +27,8 @@ export default function Cart() {
     let resto = data.find((elem) => elem.id === id)
 
     let total_cost;
+
+    const matches = useMediaQuery('(max-width:525px')
 
 
     const handleAdd = (e, key) => {
@@ -92,7 +94,8 @@ export default function Cart() {
                 <h1>Cart</h1>
                 <Paper className={styles.display} elevation={2}>
                     <Box className={styles.info}>
-                        <List className={styles.list}>
+                        <h1 className={styles.resto}>{resto.name}</h1>
+                        <List className={styles.list} dense={matches}>
                             {items.map((elem, index) => {
                                 return (
                                     <ListItem divider={items.length - 1 === index ? false : true} key={elem.key}>

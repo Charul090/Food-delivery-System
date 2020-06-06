@@ -11,6 +11,8 @@
 .info{
     width:95%;
     margin:0 auto;
+    text-align: left;
+    padding: 10px 0;
 }
 
 .name{
@@ -28,4 +30,49 @@
 
 .cost > h4{
     margin: 5px 0px;
+}
+
+.resto{
+    font-weight: 400;
+}
+
+
+
+@media screen and (max-width:768px){
+    .display{
+        width:85%;
+    }
+    
+}
+
+
+@media screen and (max-width:525px){
+    .cost{
+        flex-direction: column;
+    }
+
+    .display{
+        width:95%;
+    }
+
+    .info{
+        width:98%;
+    }
+
+    .name{
+        width:10%;
+    }    
+
+    .resto{
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .cost{
+        font-size: 18px;
+    }
+
+    .cost > *{
+        margin-bottom: 10px;
+    }
 }
