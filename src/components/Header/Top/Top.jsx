@@ -24,7 +24,7 @@ export default function Top() {
 
             </Box>
             <Box>
-                <h1>Zomatooo</h1>
+                <h1>Box buggy</h1>
             </Box>
             <Box>
                 <p>

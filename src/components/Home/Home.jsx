@@ -31,7 +31,6 @@ export default function Home() {
         <>
             <Header/>
             <main>
-                <h1>Home</h1>
                 <Search setValue={setValue} />
                 <Box className={styles.container}>
                     {array}

@@ -5,11 +5,12 @@
     grid-template-columns: auto;
     border:1px solid #CFD8DC;
     margin:10px 0px;
+    border-bottom: 3px solid #EC407A;
 }
 
 .title{
     display:flex;
-    padding:5px;
+    padding:5px 5px 0;
     justify-content: space-between;
     height:80px;
 }
@@ -52,7 +53,9 @@
 
 .info{
     text-align: left;
-    height:90px;
+    height:80px;
+    margin-bottom:10px;
+    padding:5px 0;
 }
 
 .info > p{
@@ -60,9 +63,12 @@
 }
 
 .buy{
-    padding:0px 10px;
+    padding:5px 10px;
     display: flex;
     flex-direction: row-reverse;
+    background-color: #FAFAFA;
+    height:40px;
+    align-items: center;
 }
 
 @media screen and (max-width:1024px){

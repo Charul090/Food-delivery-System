@@ -1,4 +1,4 @@
 .display{
     padding:5px;
-    border-bottom: 1px solid #EEEEEE;
+    box-shadow: 0 2px 6px 0 hsla(0,0%,0%,0.1);
 }
