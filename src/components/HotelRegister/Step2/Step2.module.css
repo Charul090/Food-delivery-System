@@ -16,3 +16,22 @@
 .warning{
     color:red;
 }
+
+
+.display{
+    width:45%;
+    margin:20px auto;
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width:100%;
+    }
+}
+
+@media screen and (max-width:525px){
+    .container{
+        width:80%;
+        flex-direction: column;
+    }
+}

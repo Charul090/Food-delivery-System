@@ -14,7 +14,7 @@ export default function Bottom() {
                 <Link to="/">Home</Link>
             </Box>
             <Box>
-                <Link to="/user-register">User Register</Link>
+                <Link to="/user-register">Register</Link>
             </Box>
             {auth ?
                 <Box>
