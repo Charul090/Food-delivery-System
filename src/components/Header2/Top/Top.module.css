@@ -12,3 +12,14 @@
 .display p{
     margin:0px;
 }
+
+.extra a {
+    text-decoration: none;
+    color:#1A237E;
+}
+
+@media screen and (max-width:694px){
+    .extra{
+        padding:0 24px;
+    }
+}

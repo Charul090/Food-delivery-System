@@ -1,14 +1,19 @@
-import React from 'react';
-import { Box } from "@material-ui/core";
+import React, { useState } from 'react';
 import styles from "./Header2.module.css"
 import Top from "./Top/Top.jsx"
 import Bottom from './Bottom/Bottom';
 
 export default function Header() {
+    const [toggle, setToggle] = useState(false)
+
+    const handleClick = () => {
+        setToggle(!toggle)
+    }
+
     return (
         <header className={styles.display}>
-            <Top />
-            <Bottom />
+            <Top handleClick={handleClick} />
+            <Bottom toggle={toggle} />
         </header>
     )
 }
