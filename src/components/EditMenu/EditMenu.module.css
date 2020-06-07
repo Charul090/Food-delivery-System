@@ -21,3 +21,31 @@
 .warning{
     color:red;
 }
+
+@media screen and (max-width:1024px){
+    .display{
+        width:50%;
+    }
+}
+
+@media screen and (max-width:768px){
+    .container{
+        width:100%;
+    }
+
+    .display{
+        width:69%;
+    }
+}
+
+@media screen and (max-width:525px){
+    .container{
+        width:80%;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .display{
+        width:90%;
+    }
+}

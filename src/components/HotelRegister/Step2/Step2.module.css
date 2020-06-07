@@ -33,5 +33,6 @@
     .container{
         width:80%;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 }
