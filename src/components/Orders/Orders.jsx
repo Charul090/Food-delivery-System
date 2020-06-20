@@ -51,7 +51,7 @@ export default function Orders() {
                                 </Box>
                                 <Box className={styles.order}>
                                     <h3>Order</h3>
-                                    <List className={styles.list}>
+                                    <List className={styles.list} dense>
                                         {elem.items.map((item, index) => {
                                             cost += (item.count * item.price)
                                             return (
