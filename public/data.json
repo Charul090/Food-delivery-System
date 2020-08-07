@@ -1,213 +1,739 @@
 [
     {
-        "name":"Lord of the Drinks",
-        "username":"drink_lord",
-        "password":"drink_lord",
-        "cuisines":["Finger Food","Continental", "European","Italian"],
-        "average_cost_for_two":1500,
-        "user_rating":{
-            "aggregate_rating":4.9,
-            "votes":1326
+        "name": "Lord of the Drinks",
+        "username": "drink_lord",
+        "password": "drink_lord",
+        "cuisines": [
+            "Finger Food",
+            "Continental",
+            "European",
+            "Italian"
+        ],
+        "average_cost_for_two": 1500,
+        "user_rating": {
+            "aggregate_rating": 4.9,
+            "votes": 1326
         },
-        "menu":[
+        "menu": [
             {
-                "dish":"Salad",
-                "price":"240",
-                "key":"0-x"
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
             },
             {
-                "dish":"Cocktail",
-                "price":"450",
-                "key":"1-x"
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
             },
             {
-                "dish":"LIIT",
-                "price":"800",
-                "key":"2-x"
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
             },
             {
-                "dish":"Biryani",
-                "price":"600",
-                "key":"3-x"
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
             },
             {
-                "dish":"Chicken Curry",
-                "price":"500",
-                "key":"4-x"
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
             },
             {
-                "dish":"Mutton Curry",
-                "price":"800",
-                "key":"5-x"
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
             },
             {
-                "dish":"Veg Pulao",
-                "price":"300",
-                "key":"6-x"
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
             },
             {
-                "dish":"Malai Kofta",
-                "price":"350",
-                "key":"7-x"
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
             },
             {
-                "dish":"Thumbs Up",
-                "price":"100",
-                "key":"8-x"
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
             },
             {
-                "dish":"Milk Shake",
-                "price":"150",
-                "key":"9-x"
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
             }
         ],
-        "order_history":[],
-        "type":["Lounge","Casual Dining"],
-        "photo_url":"https://images.unsplash.com/photo-1526234362653-3b75a0c07438?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=vishwas-katti-UrQ_BS9bLXQ-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "order_history": [],
+        "type": [
+            "Lounge",
+            "Casual Dining"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1526234362653-3b75a0c07438?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=vishwas-katti-UrQ_BS9bLXQ-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"Joey's Pizza",
-        "username":"joey",
-        "password":"joey",
-        "cuisines":["Pizza"],
-        "average_cost_for_two":800,
-        "user_rating":{
-            "aggregate_rating":4.6,
-            "votes":5974
+        "name": "Joey's Pizza",
+        "username": "joey",
+        "password": "joey",
+        "cuisines": [
+            "Pizza"
+        ],
+        "average_cost_for_two": 800,
+        "user_rating": {
+            "aggregate_rating": 4.6,
+            "votes": 5974
         },
-        "menu":[
-        {
-            "dish":"Salad",
-            "price":"240",
-            "key":"0-x"
-        },
-        {
-            "dish":"Cocktail",
-            "price":"450",
-            "key":"1-x"
-        },
-        {
-            "dish":"LIIT",
-            "price":"800",
-            "key":"2-x"
-        }
-    ],
-        "order_history":[],
-        "type":["Quick Bites"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Quick Bites"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"Bastian",
-        "username":"mrp",
-        "password":"mrp",
-        "cuisines":["Seafood"],
-        "average_cost_for_two":2500,
-        "user_rating":{
-            "aggregate_rating":4.5,
-            "votes":1438
+        "name": "Bastian",
+        "username": "mrp",
+        "password": "mrp",
+        "cuisines": [
+            "Seafood"
+        ],
+        "average_cost_for_two": 2500,
+        "user_rating": {
+            "aggregate_rating": 4.5,
+            "votes": 1438
         },
-        "type":["Casual Dining","Bar"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Casual Dining",
+            "Bar"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"Tamasha",
-        "username":"tamasha",
-        "password":"tamsha",
-        "cuisines":["Finger Food", "Continental"],
-        "average_cost_for_two":1800,
-        "user_rating":{
-            "aggregate_rating":4.9,
-            "votes":3275
+        "name": "Tamasha",
+        "username": "tamasha",
+        "password": "tamsha",
+        "cuisines": [
+            "Finger Food",
+            "Continental"
+        ],
+        "average_cost_for_two": 1800,
+        "user_rating": {
+            "aggregate_rating": 4.9,
+            "votes": 3275
         },
-        "type":["Lounge","Bar"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Lounge",
+            "Bar"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"Bhagat Tarachand",
-        "username":"tarachand",
-        "password":"tarachand",
-        "cuisines":["North Indian", "Street Food", "Fast Food", "Chinese"],
-        "average_cost_for_two":450,
-        "user_rating":{
-            "aggregate_rating":4.1,
-            "votes":1422
+        "name": "Bhagat Tarachand",
+        "username": "tarachand",
+        "password": "tarachand",
+        "cuisines": [
+            "North Indian",
+            "Street Food",
+            "Fast Food",
+            "Chinese"
+        ],
+        "average_cost_for_two": 450,
+        "user_rating": {
+            "aggregate_rating": 4.1,
+            "votes": 1422
         },
-        "type":["Casual Dining"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Casual Dining"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"Flea Bazaar Café",
-        "username":"flea_bazaar",
-        "password":"flea_bazaar",
-        "cuisines":["American", "Asian", "Street Food", "Indian", "Lucknowi", "Mexican", "Chinese", "Italian"],
-        "average_cost_for_two":800,
-        "user_rating":{
-            "aggregate_rating":4.4,
-            "votes":1424
+        "name": "Flea Bazaar Café",
+        "username": "flea_bazaar",
+        "password": "flea_bazaar",
+        "cuisines": [
+            "American",
+            "Asian",
+            "Street Food",
+            "Indian",
+            "Lucknowi",
+            "Mexican",
+            "Chinese",
+            "Italian"
+        ],
+        "average_cost_for_two": 800,
+        "user_rating": {
+            "aggregate_rating": 4.4,
+            "votes": 1424
         },
-        "type":["Café"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Café"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"HITCHKI",
-        "username":"hitchki",
-        "password":"hitchki",
-        "cuisines":["Modern Indian"],
-        "average_cost_for_two":1200,
-        "user_rating":{
-            "aggregate_rating":4.7,
-            "votes":2640
+        "name": "HITCHKI",
+        "username": "hitchki",
+        "password": "hitchki",
+        "cuisines": [
+            "Modern Indian"
+        ],
+        "average_cost_for_two": 1200,
+        "user_rating": {
+            "aggregate_rating": 4.7,
+            "votes": 2640
         },
-        "type":["Casual Dining","Bar"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Casual Dining",
+            "Bar"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"MRP - My Regular Place",
-        "username":"mrp",
-        "password":"mrp",
-        "cuisines":["Asian", "North Indian","Continental","Desserts"],
-        "average_cost_for_two":1800,
-        "user_rating":{
-            "aggregate_rating":4.0,
-            "votes":1732
+        "name": "MRP - My Regular Place",
+        "username": "mrp",
+        "password": "mrp",
+        "cuisines": [
+            "Asian",
+            "North Indian",
+            "Continental",
+            "Desserts"
+        ],
+        "average_cost_for_two": 1800,
+        "user_rating": {
+            "aggregate_rating": 4.0,
+            "votes": 1732
         },
-        "type":["Bar","Casual Dining"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Bar",
+            "Casual Dining"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"Mini Punjab's Lake Side",
-        "username":"mini_punjab",
-        "password":"mini_punjab",
-        "cuisines":["North Indian", "Mughlai", "Chinese"],
-        "average_cost_for_two":1500,
-        "user_rating":{
-            "aggregate_rating":3.9,
-            "votes":1825
+        "name": "Mini Punjab's Lake Side",
+        "username": "mini_punjab",
+        "password": "mini_punjab",
+        "cuisines": [
+            "North Indian",
+            "Mughlai",
+            "Chinese"
+        ],
+        "average_cost_for_two": 1500,
+        "user_rating": {
+            "aggregate_rating": 3.9,
+            "votes": 1825
         },
-        "type":["Casual Dining"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Casual Dining"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     },
     {
-        "name":"Yeda Republic",
-        "username":"yeda",
-        "password":"yeda",
-        "cuisines":["Finger Food", "Pizza", "Seafood"],
-        "average_cost_for_two":2200,
-        "user_rating":{
-            "aggregate_rating":4.9,
-            "votes":1922
+        "name": "Yeda Republic",
+        "username": "yeda",
+        "password": "yeda",
+        "cuisines": [
+            "Finger Food",
+            "Pizza",
+            "Seafood"
+        ],
+        "average_cost_for_two": 2200,
+        "user_rating": {
+            "aggregate_rating": 4.9,
+            "votes": 1922
         },
-        "type":["Bar","Lounge"],
-        "photo_url":"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
-        "thumb_url":"https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
+        "menu": [
+            {
+                "dish": "Salad",
+                "price": "240",
+                "key": "0-x"
+            },
+            {
+                "dish": "Cocktail",
+                "price": "450",
+                "key": "1-x"
+            },
+            {
+                "dish": "LIIT",
+                "price": "800",
+                "key": "2-x"
+            },
+            {
+                "dish": "Biryani",
+                "price": "600",
+                "key": "3-x"
+            },
+            {
+                "dish": "Chicken Curry",
+                "price": "500",
+                "key": "4-x"
+            },
+            {
+                "dish": "Mutton Curry",
+                "price": "800",
+                "key": "5-x"
+            },
+            {
+                "dish": "Veg Pulao",
+                "price": "300",
+                "key": "6-x"
+            },
+            {
+                "dish": "Malai Kofta",
+                "price": "350",
+                "key": "7-x"
+            },
+            {
+                "dish": "Thumbs Up",
+                "price": "100",
+                "key": "8-x"
+            },
+            {
+                "dish": "Milk Shake",
+                "price": "150",
+                "key": "9-x"
+            }
+        ],
+        "order_history": [],
+        "type": [
+            "Bar",
+            "Lounge"
+        ],
+        "photo_url": "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jason-leung-poI7DelFiVA-unsplash.jpg&w=1920",
+        "thumb_url": "https://images.unsplash.com/photo-1515669097368-22e68427d265?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=mgg-vitchakorn-vBOxsZrfiCw-unsplash.jpg&w=640"
     }
 ]
